@@ -27,10 +27,10 @@ var randomNumbers = [
   68,
 ];
 
-var hasil = (randomNumbers.filter((a) => a >= 65).map = randomNumbers.map(
-  (a) => a / 2
-).filter = randomNumbers.filter((a) => a < 40).map = randomNumbers.map(
-  (a) => a / randomNumbers.length
-))
-.reduce= randomNumbers.reduce((acc,cur)=>(acc/2)+cur);
-console.log(hasil);
+var newRandom = randomNumbers
+.filter((a) => a >= 65)
+.map(a=>a / 2)
+.filter(a=>a < 40).map(a=> randomNumbers.length/a)
+.reduce((a,c)=>(a/2)+c);
+
+console.log(newRandom);

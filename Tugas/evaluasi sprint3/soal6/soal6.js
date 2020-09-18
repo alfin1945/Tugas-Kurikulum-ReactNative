@@ -1,11 +1,19 @@
 function mentorProgrammer(nama, status, asal) {
-  console.log(nama);
-  console.log(status);
-  console.log(asal);
+nama()
+status()
+asal()
 }
 
-mentorProgrammer(
-  "Nama Mentor Wandi Pratama",
-  "Statusnya nya Santri",
-  "Berasal dari kota Prabumulih"
-);
+function nama(){
+  console.log("Nama Mentor Wandi Pratama");
+}
+
+function status(){
+  console.log("Statusnya nya Santri");
+}
+
+function asal(){
+  console.log( "Berasal dari kota Prabumulih");
+}
+
+mentorProgrammer(nama,status,asal)

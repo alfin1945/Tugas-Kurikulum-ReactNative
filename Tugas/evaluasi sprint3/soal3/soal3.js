@@ -19,10 +19,6 @@ var kodeUnix = [
   90,
   90,
 ];
-
-var kode = (kodeUnix.map(
-  (a) => a - 50 + kodeUnix.length
-).filter = kodeUnix.filter((a) => a < 20))
-.reduce= kodeUnix.reduce(a=>a+kodeUnix.length);
-
-console.log(kode);
+ 
+var newKill = kodeUnix.map(a=> a -50+ kodeUnix.length).filter (a => a < 20).reduce((acc,cr)=> acc+cr);
+console.log(newKill);
